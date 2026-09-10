@@ -1,0 +1,77 @@
+MIT License
+
+Copyright (c) 2026 dagtew12rqza61-hash
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+## Third-Party Licenses
+
+This configuration uses and references the following open-source projects:
+
+### Hyprland
+- License: BSD 3-Clause
+- Website: https://hyprland.org
+- Repository: https://github.com/hyprwm/Hyprland
+
+### Waybar
+- License: MIT
+- Repository: https://github.com/Alexays/Waybar
+
+### Rofi
+- License: MIT
+- Repository: https://github.com/davatorium/rofi
+
+### Kitty Terminal
+- License: GPL v3
+- Website: https://sw.kovidgoyal.net/kitty/
+- Repository: https://github.com/kovidgoyal/kitty
+
+### Dunst
+- License: BSD
+- Repository: https://github.com/dunst-project/dunst
+
+### Mako
+- License: MIT
+- Repository: https://github.com/emersion/mako
+
+### Catppuccin
+- License: MIT
+- Website: https://catppuccin.com
+- Repository: https://github.com/catppuccin/catppuccin
+
+### Papirus Icons
+- License: LGPL 3.0
+- Repository: https://github.com/PapirusDevelopmentTeam/papirus-icon-theme
+
+### Swaybg
+- License: MIT
+- Repository: https://github.com/swaywm/swaybg
+
+---
+
+## Attribution
+
+This configuration is inspired by and builds upon work from:
+- The Hyprland community
+- Various dotfiles repositories
+- Desktop environment configurations
+
+We appreciate all the developers and contributors who make these amazing tools possible!
