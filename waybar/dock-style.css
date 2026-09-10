@@ -1,0 +1,56 @@
+* {
+    border: none;
+    border-radius: 15px;
+    font-family: "JetBrains Mono", "Noto Sans", sans-serif;
+    font-size: 14px;
+    min-height: 0;
+}
+
+window#waybar {
+    background-color: rgba(30, 30, 46, 0.85);
+    border: 2px solid rgba(137, 180, 250, 0.3);
+    color: #cdd6f4;
+    backdrop-filter: blur(12px);
+    border-radius: 15px;
+}
+
+#custom-separator {
+    color: rgba(137, 180, 250, 0.3);
+    padding: 0 5px;
+    font-size: 18px;
+}
+
+#custom-app1,
+#custom-app2,
+#custom-app3,
+#custom-app4,
+#custom-app5,
+#custom-app6 {
+    padding: 0 15px;
+    font-size: 20px;
+    color: #89dceb;
+    background: transparent;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 10px;
+}
+
+#custom-app1:hover,
+#custom-app2:hover,
+#custom-app3:hover,
+#custom-app4:hover,
+#custom-app5:hover,
+#custom-app6:hover {
+    background: linear-gradient(135deg, rgba(137, 180, 250, 0.2), rgba(245, 194, 230, 0.1));
+    color: #f5c2e6;
+    transform: scale(1.2);
+    box-shadow: 0 4px 15px rgba(137, 180, 250, 0.3);
+}
+
+tooltip {
+    background: rgba(30, 30, 46, 0.95);
+    border: 1px solid rgba(137, 180, 250, 0.3);
+    border-radius: 8px;
+    padding: 8px 12px;
+    color: #cdd6f4;
+    backdrop-filter: blur(10px);
+}
