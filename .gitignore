@@ -1,0 +1,273 @@
+# Git Ignore file for Beautiful Hyprland Configuration
+
+# ==============================================
+# BACKUP AND TEMPORARY FILES
+# ==============================================
+*.bak
+*.backup
+*.swp
+*.swo
+*~
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+
+# ==============================================
+# EDITOR AND IDE FILES
+# ==============================================
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+.vim/
+.netrwhist
+*~
+*.swp
+*.swo
+*~
+.emacs.d/
+.config/emacs/
+tags
+.tags
+
+# ==============================================
+# PYTHON VIRTUALENV
+# ==============================================
+venv/
+env/
+ENV/
+*.pyc
+__pycache__/
+.pytest_cache/
+*.egg-info/
+
+# ==============================================
+# NODE/NPM
+# ==============================================
+node_modules/
+npm-debug.log
+package-lock.json
+yarn.lock
+
+# ==============================================
+# SYSTEM FILES
+# ==============================================
+.Trash/
+.Trash-1000/
+.cache/
+.local/
+Desktop/
+Documents/
+Downloads/
+Music/
+Pictures/
+Videos/
+
+# ==============================================
+# HYPRLAND RUNTIME FILES
+# ==============================================
+.cache/hyprlandlog.txt
+.cache/hyprland/
+.cache/swaybg.pid
+~/.cache/waybar/
+~/.cache/rofi/
+
+# ==============================================
+# USER-SPECIFIC CONFIGURATIONS
+# ==============================================
+# Don't commit personal modifications
+local.conf
+personal.conf
+secret.conf
+.env
+.env.local
+
+# ==============================================
+# WALLPAPERS AND MEDIA
+# ==============================================
+# Keep structure but ignore large media files
+wallpapers/*.jpg
+wallpapers/*.jpeg
+wallpapers/*.png
+wallpapers/*.gif
+wallpapers/*.webp
+screenshots/
+!wallpapers/README.md
+
+# ==============================================
+# DISTRIBUTION-SPECIFIC FILES
+# ==============================================
+*.tar.gz
+*.tar.bz2
+*.zip
+*.rar
+dist/
+build/
+*.egg-info/
+
+# ==============================================
+# LOGS AND DEBUG FILES
+# ==============================================
+*.log
+debug/
+logs/
+*.trace
+
+# ==============================================
+# OS-SPECIFIC
+# ==============================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Linux
+.directory
+.fuse_hidden*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# ==============================================
+# DOCUMENTATION BUILD FILES
+# ==============================================
+site/
+docs/_build/
+*.md.bak
+
+# ==============================================
+# LOCK FILES (keep dependencies visible)
+# ==============================================
+# Uncomment if you want to ignore lock files
+# Cargo.lock
+# Pipfile.lock
+
+# ==============================================
+# COMPILED BINARIES
+# ==============================================
+*.o
+*.a
+*.so
+*.dylib
+*.dll
+*.exe
+*.out
+
+# ==============================================
+# CONFIGURATION BACKUPS
+# ==============================================
+# Auto-created backups during installation
+.config_backup_*/
+config_backup/
+*.config.backup
+
+# ==============================================
+# PERSONAL NOTES AND TODOS
+# ==============================================
+TODO.md
+NOTES.md
+personal/
+private/
+secrets/
+
+# ==============================================
+# SHELL AND SCRIPT TEMPORARY FILES
+# ==============================================
+*.sh.bak
+*.bash.bak
+*.zsh.bak
+*.fish.bak
+
+# ==============================================
+# TESTING AND COVERAGE
+# ==============================================
+.coverage
+coverage/
+htmlcov/
+.tox/
+.pytest_cache/
+test-results/
+
+# ==============================================
+# DEPENDENCY AND PACKAGE FILES
+# ==============================================
+*.gem
+*.gemspec
+Gemfile.lock
+vendor/
+.bundle/
+
+# ==============================================
+# VIRTUAL ENVIRONMENTS
+# ==============================================
+.venv/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# ==============================================
+# CLUTTER - COMMENT OUT AS NEEDED
+# ==============================================
+# Only ignore if you don't want to track:
+# *.swp
+# .DS_Store
+# Thumbs.db
+
+# ==============================================
+# ALLOW CERTAIN FILES
+# ==============================================
+# These rules re-include files that would otherwise be ignored
+# Uncomment the files you want to keep
+
+# Keep configuration files
+!hyprland/
+!waybar/
+!rofi/
+!kitty/
+!dunst/
+!mako/
+!gtk/
+!shell/
+!scripts/
+!display-manager/
+
+# Keep documentation
+!README.md
+!FAQ.md
+!CONTRIBUTING.md
+!CHANGELOG.md
+!COLORS.md
+!PERFORMANCE.md
+!LICENSE
+
+# Keep installation script
+!install.sh
+
+# Keep shell integration
+!shell-config.sh
+
+# ==============================================
+# RULE PRECEDENCE
+# ==============================================
+# These rules have lower priority than files above
+# and will not exclude previously included files
+
+# ==============================================
+# NOTES
+# ==============================================
+# This .gitignore is configured to:
+# 1. Ignore user-specific configurations
+# 2. Ignore temporary and backup files
+# 3. Ignore large media files
+# 4. Keep all shared configuration files
+# 5. Prevent committing system-specific paths
+#
+# For personal modifications, create a local .gitignore:
+# echo "my-personal-config.conf" >> .git/info/exclude
