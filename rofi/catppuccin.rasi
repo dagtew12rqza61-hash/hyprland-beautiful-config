@@ -1,0 +1,164 @@
+* {
+    bg0: #1e1e2e;
+    bg1: #313244;
+    bg2: #45475a;
+    bg3: #585b70;
+    fg0: #cdd6f4;
+    fg1: #a6adc8;
+    blue: #89dceb;
+    lavender: #b4befe;
+    mauve: #cba6f7;
+    pink: #f5c2e6;
+    red: #f38ba8;
+    green: #a6e3a1;
+    yellow: #f9e2af;
+    
+    background-color: transparent;
+    text-color: @fg0;
+    accent-color: @blue;
+    
+    border: 0;
+    margin: 0;
+    padding: 0;
+    spacing: 0;
+}
+
+window {
+    background-color: rgba(30, 30, 46, 0.92);
+    border: 2px solid rgba(137, 180, 250, 0.3);
+    border-radius: 15px;
+    width: 900px;
+    height: 500px;
+    x-offset: 0px;
+    y-offset: 0px;
+}
+
+mainbox {
+    background-color: transparent;
+    children: [ inputbar, listbox ];
+    spacing: 15px;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+inputbar {
+    background-color: rgba(45, 45, 64, 0.6);
+    text-color: @fg0;
+    padding: 12px 15px;
+    border: 1px solid rgba(137, 180, 250, 0.2);
+    border-radius: 10px;
+    spacing: 10px;
+    children: [ prompt, entry ];
+    font: "JetBrains Mono 12";
+}
+
+prompt {
+    text-color: @pink;
+    font: "JetBrains Mono 12";
+}
+
+entry {
+    placeholder: "Search applications...";
+    placeholder-color: @fg1;
+    text-color: @fg0;
+    background-color: transparent;
+    cursor: text;
+}
+
+listbox {
+    background-color: transparent;
+    spacing: 5px;
+    dynamic: true;
+}
+
+listview {
+    background-color: transparent;
+    columns: 3;
+    spacing: 10px;
+    cycle: true;
+    dynamic: true;
+    scrollbar: true;
+}
+
+scrollbar {
+    background-color: rgba(45, 45, 64, 0.3);
+    handle-color: rgba(137, 180, 250, 0.5);
+    handle-width: 5px;
+    border-radius: 10px;
+    margin: 0 0 0 10px;
+}
+
+element {
+    background-color: rgba(45, 45, 64, 0.4);
+    text-color: @fg0;
+    orientation: vertical;
+    border-radius: 10px;
+    padding: 15px;
+    spacing: 8px;
+    border: 1px solid rgba(137, 180, 250, 0.1);
+    transition: all 200ms ease;
+}
+
+element icon {
+    size: 48px;
+    background-color: transparent;
+    text-color: @blue;
+}
+
+element-text {
+    text-color: @fg0;
+    horizontal-align: 0.5;
+    font: "JetBrains Mono 10";
+    line-height: 1.4;
+}
+
+element-text.selected {
+    text-color: @fg0;
+}
+
+element:hover {
+    background-color: rgba(137, 180, 250, 0.15);
+    border: 1px solid rgba(137, 180, 250, 0.4);
+    box-shadow: 0 4px 15px rgba(137, 180, 250, 0.2);
+    transform: scale(1.05);
+}
+
+element.selected {
+    background: linear-gradient(135deg, rgba(137, 180, 250, 0.25), rgba(245, 194, 230, 0.15));
+    border: 2px solid rgba(137, 180, 250, 0.5);
+    box-shadow: 0 6px 20px rgba(137, 180, 250, 0.3);
+}
+
+element.selected icon {
+    text-color: @pink;
+}
+
+element.alternate.selected {
+    background: linear-gradient(135deg, rgba(137, 180, 250, 0.25), rgba(245, 194, 230, 0.15));
+}
+
+element.selected:nth-child(even) {
+    background: linear-gradient(135deg, rgba(166, 173, 200, 0.25), rgba(245, 194, 230, 0.15));
+}
+
+message {
+    background-color: rgba(30, 30, 46, 0.9);
+    border: 1px solid rgba(137, 180, 250, 0.2);
+    border-radius: 10px;
+    padding: 10px;
+    text-color: @fg0;
+}
+
+textbox {
+    text-color: @fg0;
+    background-color: transparent;
+    padding: 5px;
+}
+
+error-message {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgba(243, 139, 168, 0.1);
+    text-color: @red;
+    border: 1px solid rgba(243, 139, 168, 0.3);
+}
